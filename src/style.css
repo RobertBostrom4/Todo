@@ -62,9 +62,20 @@ nav {
     height: 100%;
 }
 
+.tasks {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: 4%;
+    max-width: 600px;
+}
+
 button {
     background-color: lightgray;
+    height: 2rem;
 }
+
 
 button:hover {
     background-color: gray;
@@ -72,4 +83,33 @@ button:hover {
 
 button:focus {
     font-weight: bold;
+}
+
+.remove-task-button, .remove-project-button {
+    all: unset;
+    background: url('./x.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    height: 100%;
+    min-width: 50px;
+}
+
+.task-information:hover {
+    background-color: gray;
+    cursor: pointer;
+
+}
+
+.date-button {
+    height: 100%;
+}
+
+.task-done-button {
+    all: unset;
+    background: url('./circle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    height: 100%;
 }
