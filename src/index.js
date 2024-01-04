@@ -14,7 +14,7 @@ const upcomingButton = document.querySelector('.upcoming');
 
 let projects = {};
 
-if (localStorage.length === 0) {
+if (localStorage.length <= 1) {
     const stringifiedData = JSON.stringify(projects);
     localStorage.setItem('savedProjects', stringifiedData);
 }
